@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 // import { RegistrationPage } from "./pages/RegistrationPage/RegistrationPage";
  import { MainPage } from "./pages/MainPage/MainPage";
  import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
+import { DetailsPage } from "./pages/DetailsPage/DetailsPage";
+
 
 const routerConfig = createBrowserRouter([
   {
@@ -21,6 +23,11 @@ const routerConfig = createBrowserRouter([
       path: "/profile",
       element: <ProfilePage/>
     },
+    {
+      path: "/details/:id",
+      element: <DetailsPage/>
+    },
+   
  ]);
 
 function App() {

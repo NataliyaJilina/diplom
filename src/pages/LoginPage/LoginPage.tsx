@@ -7,9 +7,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../components/store/store";
-import { changeUser } from "../../components/store/slices/UserSlice";
 import { AppHeading } from "../../components/Typography/AppHeading/AppHeading";
+import { RootState } from "../../store/store";
+import { changeUser } from "../../store/slices/UserSlice";
 
 interface ILoginForm {
   useremail: string;
@@ -29,7 +29,7 @@ const mockUser = {
   phone_number: "12345678",
   user_id: 1,
   name: "Nataliya",
-  reg_data: new Date().toISOString(),
+  // reg_data: new Date().toISOString(),
   city: "Tashkent",
 };
 
@@ -61,6 +61,7 @@ export const LoginPage = () => {
       navigate("/");
       alert("Неверные данные")
     }
+    
 
     console.log("USER: ", user);
   };

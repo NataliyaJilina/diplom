@@ -14,6 +14,7 @@ import styled from "styled-components";
      background: rgba(255, 255, 255, 0.5); 
      width: 500px;
      height: 450px;
+     border-radius: 30px;
    }
      h1 {
       color: darkgreen;

@@ -12,6 +12,7 @@ export const SCAppButton = styled.button`
   transition: transform 0.3s ease;
   color: white;
   font-weight: bold;
+  border-radius: 10px;
 
 
   &:is(:active) {

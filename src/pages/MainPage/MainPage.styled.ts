@@ -14,10 +14,11 @@ export const SCMainPage = styled.div`
   }
 
   .workCard {
-    background-color: lightgray;
+    background: url("./public/img/header1.jpg") center/cover no-repeat; 
 
     border: 1px solid black;
     border-radius: 5px;
+    padding-bottom: 30px;
   }
 
   .workCard img {
